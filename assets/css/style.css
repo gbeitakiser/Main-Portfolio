@@ -1,0 +1,45 @@
+body {
+    background: url("../images/background.png") repeat-x 0 0 scroll;
+    height:100%;
+    width:100%;
+}
+
+/* Nav Bar */
+
+
+/* Bio Page */
+#profilePic {
+    width: 200px;
+    float: left;
+    padding: 18px;
+}
+
+/* Lower Bar */
+#footer1, #footer2 { 
+    position: sticky;
+}
+
+#footer1 {
+    height: 40px;
+    background-color: burlywood;
+}
+
+#footer2 {
+    height: 80px;
+    background-color: black;
+}
+
+.social-media-links {
+    margin: 0 auto;
+    width: 10%;
+    padding-top: 19px;
+}
+
+#linked-logo, #git-logo {
+    width: 35px;
+    margin-right: 10px;
+}
+
+#linked-logo:hover, #git-logo:hover {
+    background-color: wheat;
+}

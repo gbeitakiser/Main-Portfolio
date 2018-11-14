@@ -5,7 +5,6 @@ $(function () {
 
 // Bio Page
 var bioHeader = "About Me"
-var profilePic = "<img id='profilePic src='assets/images/profilepic.jpg' alt='Gabriel Beita-Kiser'>"
 
 var bioPageInfo1 = "Hey there! My name is Gabriel. I was born in Oakland, California but moved to San Jose, " + 
 "Costa Rica when I was three. After attending kindergarten there, I moved to Tucson, Arizona when I was 5 and stayed there through college. " + 
@@ -39,6 +38,8 @@ function bioPage () {
     $("#section-text").empty()
 
     $("#section-title").append(bioHeader)
+    var profilePic = $("<img>")
+    profilePic.attr({"src": "assets/images/ProfilePic.jpg", "id": "profilePic", "alt": "Gabriel Beita-Kiser"})
     $("#section-image").append(profilePic)
     $("#section-text").append(bioPageInfo1)
     $("#section-text").append(bioPageInfo2)
