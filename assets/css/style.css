@@ -1,22 +1,63 @@
+/* Previous Fonts */
+/* font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif; */
+/* font-family: 'Georgia', Times, Times New Roman, serif; */
+
+
+/* Page Body */
 body {
     background: url("../images/background.png") repeat-x 0 0 scroll;
     height:100%;
     width:100%;
 }
 
+/* ==================================== */
 /* Nav Bar */
-
-
-/* Bio Page */
-#profilePic {
-    width: 200px;
-    float: left;
+/* ==================================== */
+.nav-bar {
+    border-bottom-style: solid;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    background-color: black;
+    padding-left: 240px;
+}
+h1 {
+    width: fit-content;
+    height: 50px;
     padding: 18px;
+    font-size: 20pt;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    margin-right: 410px;
+    line-height: 50px;
+    font-weight: bold;
+    background-color: burlywood;
 }
 
+nav {
+    display: inline-block;
+    font-size: 14pt;
+}
+
+#nav1:hover, #nav2:hover, #nav3:hover {
+    color: white;
+}
+
+#nav1, #nav2 {
+    padding: 10px; 
+    color: wheat;
+}
+
+#nav3 {
+    padding-left: 10px;
+    color: wheat;
+}
+
+/* ==================================== */
 /* Lower Bar */
+/* ==================================== */
 #footer1, #footer2 { 
     position: sticky;
+    overflow: hidden;
 }
 
 #footer1 {
@@ -42,4 +83,46 @@ body {
 
 #linked-logo:hover, #git-logo:hover {
     background-color: wheat;
+}
+
+.lower-bar {
+    bottom: 0px;
+}
+/* ==================================== */
+/* Main Content */
+/* ==================================== */
+#section-title {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-weight: bold;
+    font-size: 18pt;
+    border-bottom: 2px;
+    border-bottom-style: solid;
+    border-color: black;
+    padding: 15px;
+    padding-left: 19px;
+}
+
+/* ==================================== */
+/* Bio Page */
+/* ==================================== */
+.content-main {
+    background-color: antiquewhite;
+    margin: 20px 240px 20px 240px;
+}
+
+#profilePic {
+    width: 200px;
+    float: left;
+    padding: 18px;
+}
+
+p {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    padding-right: 25px;
+    line-height: 25pt;
+    margin-left: 18px;
+}
+
+#p3 {
+    margin-bottom: 20px;
 }

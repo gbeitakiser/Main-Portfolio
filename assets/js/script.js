@@ -3,9 +3,15 @@ $(function () {
 // Variables
 // ========================================
 
-// Bio Page
+// Page Headers 
 var bioHeader = "About Me"
+var portfolioHeader = "Portfolio"
+var contactHeader = "Contact Me"
 
+
+
+// ========================================
+// Bio Page Writing
 var bioPageInfo1 = "Hey there! My name is Gabriel. I was born in Oakland, California but moved to San Jose, " + 
 "Costa Rica when I was three. After attending kindergarten there, I moved to Tucson, Arizona when I was 5 and stayed there through college. " + 
 "I studied sustainable architecture and city planning at the University of Arizona and graduated with a B.S. in " +
@@ -21,17 +27,16 @@ var bioPageInfo3 = "Let me be clear, my focus isn’t just technology but on how
 "the direction of our species. I see a great need to adapt and evolve these systems to help us confront the problems we face as a society. " +
 "Technology is an ally and a powerful tool that can help us solve problems like climate change and wealth inequality. " +
 "I want to learn the language of computers so that I can advance these causes."
-
-// Portfolio Page
-var portfolioHeader = "Portfolio"
-
-// Contact Header
-var contactHeader = "Contact Me"
+// ========================================
 
 
 // ========================================
 // Functions And States
 // ========================================
+
+
+// ========
+// Bio Page
 function bioPage () {
     $("#section-title").empty()
     $("#section-image").empty()
@@ -41,12 +46,77 @@ function bioPage () {
     var profilePic = $("<img>")
     profilePic.attr({"src": "assets/images/ProfilePic.jpg", "id": "profilePic", "alt": "Gabriel Beita-Kiser"})
     $("#section-image").append(profilePic)
-    $("#section-text").append(bioPageInfo1)
-    $("#section-text").append(bioPageInfo2)
-    $("#section-text").append(bioPageInfo3)
+    $("#section-content").append("<p id='p1'>" + bioPageInfo1 + "</p>")
+    $("#section-content").append("<br>")
+    $("#section-content").append("<p id='p2'>" + bioPageInfo2 + "</p>")
+    $("#section-content").append("<br>")
+    $("#section-content").append("<p id='p3'>" + bioPageInfo3 + "</p>")
 }
 
-    bioPage()
+// ==============
+// Portfolio Page
+function portfolioPage () {
+    $("#section-title").empty()
+    $("#section-image").empty()
+    $("#section-content").empty()
 
+    $("#section-title").append(portfolioHeader)
+
+}
+
+// ============
+// Contact Page
+function contactPage () {
+    $("#section-title").empty()
+    $("#section-image").empty()
+    $("#section-content").empty()
+
+    $("#section-title").append(contactHeader)
+    
+
+}
+
+
+// ========================================
+// Click Functions
+// ========================================
+
+// ???????????????????????????????????
+// ???????????????????????????????????
+
+// $(".nav").on("click", function () {
+//     var idNumber = $(this).attr("id")
+//     console.log(idNumber)
+// })
+
+// ???????????????????????????????????
+// ???????????????????????????????????
+
+
+
+// ===============
+// Bio Click
+$("#nav1").on("click", function () {
+        bioPage()
+    })
+// ===============
+
+
+// ===============
+// Portfolio Click
+$("#nav2").on("click", function () {
+    portfolioPage()
+})
+// ===============
+
+
+// ===============
+// Contact Click
+$("#nav3").on("click", function () {
+    contactPage()
+})
+// ===============
+
+// bioPage()
 
 })
